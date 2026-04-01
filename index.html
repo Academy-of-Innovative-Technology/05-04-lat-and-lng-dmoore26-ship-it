@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapbox Latitude and Longitude</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h2>Mapbox with Latitude & Longitude</h2>
+
+    <div class="form-group">
+      <label for="longitude">Longitude</label>
+      <input type="text" class="form-control" id="longitude" placeholder="Enter Longitude" value="0">
+    </div>
+
+    <div class="form-group">
+      <label for="latitude">Latitude</label>
+      <input type="text" class="form-control" id="latitude" placeholder="Enter Latitude" value="0">
+    </div>
+
+    <button class="btn btn-primary" onclick="setMapCenter()">Set Map Center</button>
+
+    <div id="map" class="mt-4"></div>
+  </div>
+
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+  <script src="env.js"></script>
+  <script src="src/js/script.js"></script>
+</body>
+
+</html>
