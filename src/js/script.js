@@ -13,7 +13,7 @@ function setMapCenter() {
   const lat = parseFloat(document.getElementById('latitude').value);
 
   if (isNaN(long) || isNaN(lat) || long < -180 || long > 180 || lat < -90 || lat > 90) {
-    alert('Please enter valid coordinates. Longitude must be -180..180 and latitude -90..90.');
+    alert('Please enter valid coords.');
     return;
   }
 
